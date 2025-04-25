@@ -7,17 +7,18 @@ import { useTitle } from "../hooks";
 export const MovieDetail = () => {
   const params = useParams();
   const [movie, setMovie] = useState({});
+  const apiKey = process.env.REACT_APP_API_KEY;
   const image = movie.poster_path ? `https://image.tmdb.org/t/p/original/${movie.poster_path}` : Backup;
   useTitle(movie.title);
 
   useEffect(() => {
     async function fetchMovie() {
-      const response = await fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+      const response = await fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=${apiKey}&language=en-US`);
       const json = await response.json();
       setMovie(json);
     }
     fetchMovie();
-  },[params.id]);
+  },[]);
 
 
   return (
