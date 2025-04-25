@@ -1,0 +1,26 @@
+API Key- ebb658fd9e621c520c449b6e40695321
+Token - 
+
+Search: 
+https://api.themoviedb.org/3/search/movie?query=avtar&language=en-US&page=1
+
+Movie Detail:
+https://api.themoviedb.org/3/movie/1197306?language=en-US
+
+Now Playing: 
+https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1
+
+Popular:
+https://api.themoviedb.org/3/movie/popular?language=en-US&page=1
+
+Top Rated:
+https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1
+
+Upcoming:
+https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1
+
+
+
+
+
+
